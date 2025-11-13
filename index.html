@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Надежда Шкодина - Frontend Developer</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body data-theme="light">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="brand-logo">💻</span>
+                <span class="brand-text">Nadezhda Shkodina</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link hover-effect">Обо мне</a></li>
+                <li><a href="#education" class="nav-link hover-effect">Образование</a></li>
+                <li><a href="#skills" class="nav-link hover-effect">Навыки</a></li>
+                <li><a href="#projects" class="nav-link hover-effect">Проекты</a></li>
+                <li><a href="#contact" class="nav-link hover-effect">Контакты</a></li>
+            </ul>
+            <div class="nav-actions">
+                <!-- Переключатель тем -->
+                <div class="theme-switcher">
+                    <label class="radio-label hover-effect" title="Светлая тема">
+                        <input type="radio" name="theme" value="light" checked>
+                        <span class="radiomark"></span>
+                        🌞
+                    </label>
+                    <label class="radio-label hover-effect" title="Тёмная тема">
+                        <input type="radio" name="theme" value="dark">
+                        <span class="radiomark"></span>
+                        🌙
+                    </label>
+                    <label class="radio-label hover-effect" title="Градиентная тема">
+                        <input type="radio" name="theme" value="gradient">
+                        <span class="radiomark"></span>
+                        🌈
+                    </label>
+                </div>
+    
+                <a href="https://github.com/Shtoga" class="btn btn-ghost" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🚀 Frontend Developer</span>
+                </div>
+                <h1 class="hero-title">
+                    Привет, я <span class="text-gradient">Надежда Шкодина</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Создаю современные и интуитивно понятные веб-интерфейсы
+                </p>
+                <p class="hero-description">
+                    Превращаю сложные задачи в элегантные цифровые решения. Увлекаюсь чистым кодом,
+                    адаптивным дизайном и созданием пользовательских интерфейсов, которые вдохновляют.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-paper-plane"></i> Связаться со мной
+                    </button>
+                    <button class="btn btn-secondary" onclick="downloadResume()">
+                        <i class="fas fa-download"></i> Скачать резюме
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">год опыта</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">завершенных проектов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">качество кода</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>nadezhda.shkodina — bash — 80x24</span>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="code-line"><span class="prompt">$</span> <span class="command">whoami</span></div>
+                        <div class="code-line output">frontend-developer</div>
+                        <div class="code-line"><span class="prompt">$</span> <span class="command">skills --show</span>
+                        </div>
+                        <div class="code-line output">HTML5 • CSS3 • JavaScript • Git • Responsive Design</div>
+                        <div class="code-line"><span class="prompt">$</span> <span class="command">projects
+                                --count</span></div>
+                        <div class="code-line output">15+ completed projects</div>
+                        <div class="code-line"><span class="prompt">$</span> <span
+                                class="command typed-command"></span><span class="cursor">|</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="section-title">Образование & Опыт</h2>
+            <div class="education-grid">
+                <div class="education-card hover-effect">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-badge">Высшее образование</div>
+                    <h3>НИЯУ МИФИ</h3>
+                    <p class="edu-years">1997-2002</p>
+                    <p class="edu-specialty">Программное обеспечение</p>
+                    <p class="edu-additional">Специалитет</p>
+                </div>
+                <div class="education-card hover-effect">
+                    <div class="edu-icon">🚀</div>
+                    <div class="edu-badge">Современные технологии</div>
+                    <h3>Веб-разработка</h3>
+                    <p class="edu-years">2024-2025</p>
+                    <p class="edu-specialty">Frontend Development</p>
+                    <p class="edu-additional">HTML5, CSS3, JavaScript, Git</p>
+                </div>
+                <div class="education-card hover-effect">
+                    <div class="edu-icon">💡</div>
+                    <div class="edu-badge">Саморазвитие</div>
+                    <h3>Непрерывное обучение</h3>
+                    <p class="edu-years">Постоянно</p>
+                    <p class="edu-specialty">Актуальные технологии</p>
+                    <p class="edu-additional">Изучаю новые фреймворки и инструменты</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Технические Навыки</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag hover-effect">
+                            <i class="fab fa-html5"></i> HTML5
+                        </span>
+                        <span class="skill-tag hover-effect">
+                            <i class="fab fa-css3-alt"></i> CSS3
+                        </span>
+                        <span class="skill-tag hover-effect">
+                            <i class="fab fa-js"></i> JavaScript
+                        </span>
+                        <span class="skill-tag hover-effect">
+                            <i class="fas fa-mobile-alt"></i> Responsive
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Инструменты</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag hover-effect">
+                            <i class="fab fa-git-alt"></i> Git
+                        </span>
+                        <span class="skill-tag hover-effect">
+                            <i class="fab fa-github"></i> GitHub
+                        </span>
+                        <span class="skill-tag hover-effect">
+                            <i class="fab fa-figma"></i> Figma
+                        </span>
+                        <span class="skill-tag hover-effect">
+                            <i class="fas fa-terminal"></i> VS Code
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-level">
+                <h3>Уровень владения</h3>
+                <div class="level-bars">
+                    <div class="level-item">
+                        <div class="level-info">
+                            <span>HTML/CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="level-bar">
+                            <div class="level-progress" data-level="70"></div>
+                        </div>
+                    </div>
+                    <div class="level-item">
+                        <div class="level-info">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="level-bar">
+                            <div class="level-progress" data-level="50"></div>
+                        </div>
+                    </div>
+                    <div class="level-item">
+                        <div class="level-info">
+                            <span>Git & GitHub</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="level-bar">
+                            <div class="level-progress" data-level="80"></div>
+                        </div>
+                    </div>
+                    <div class="level-item">
+                        <div class="level-info">
+                            <span>Responsive Design</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="level-bar">
+                            <div class="level-progress" data-level="50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Мои Проекты</h2>
+            <p class="section-subtitle">Реализованные работы, демонстрирующие мои навыки в веб-разработке</p>
+
+            <div class="projects-grid">
+                <div class="project-card hover-effect">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://shtoga.github.io/Pizza-rebel/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Shtoga/Pizza-rebel" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">🍕</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Full Website</div>
+                        <h3>Pizza Rebel</h3>
+                        <p>Современный сайт пиццерии с адаптивным дизайном, интерактивным меню и формой бронирования.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+                        <a href="https://shtoga.github.io/Pizza-rebel/" class="btn btn-project" target="_blank">
+                            <i class="fas fa-eye"></i> Посмотреть проект
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card hover-effect">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://shtoga.github.io/cars/" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Shtoga/cars" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">🚗</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Landing Page</div>
+                        <h3>Car Showcase</h3>
+                        <p>Лендинг для автомобильной компании с галереей автомобилей, фильтрацией и контактной формой.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Grid Layout</span>
+                        </div>
+                        <a href="https://shtoga.github.io/cars/" class="btn btn-project" target="_blank">
+                            <i class="fas fa-eye"></i> Посмотреть проект
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card hover-effect">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link coming-soon">
+                                    <i class="fas fa-hourglass-half"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">🌟</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge coming">In Progress</div>
+                        <h3>Portfolio v2.0</h3>
+                        <p>Современное портфолио с анимациями, интерактивными элементами и улучшенным UX/UI дизайном.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>Framer Motion</span>
+                            <span>TypeScript</span>
+                        </div>
+                        <button class="btn btn-project" disabled>
+                            <i class="fas fa-code"></i> В разработке
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Давайте создадим что-то крутое вместе!</h2>
+                    <p class="contact-description">
+                        Готова к новым вызовам и интересным проектам. Давайте обсудим, как я могу помочь в реализации
+                        ваших идей.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <p>nadezhda.shkodina@example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>GitHub</h4>
+                                <p>github.com/Shtoga</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Локация</h4>
+                                <p>Москва, Россия</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Shtoga" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h3>Отправить сообщение</h3>
+
+                    <div class="form-group">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" id="name" class="form-input" placeholder="Как к вам обращаться?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Тема</label>
+                        <select id="subject" class="form-select">
+                            <option value="work">Предложение работы</option>
+                            <option value="project">Обсуждение проекта</option>
+                            <option value="collaboration">Сотрудничество</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Сообщение</label>
+                        <textarea id="message" class="form-textarea"
+                            placeholder="Расскажите о вашем проекте или идее..." rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Отправить сообщение
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-logo">💻</span>
+                    <span class="brand-text">Nadezhda Shkodina</span>
+                </div>
+                <p class="footer-tagline">Frontend Developer • Creating digital experiences</p>
+
+                <div class="footer-links">
+                    <a href="#about">Обо мне</a>
+                    <a href="#projects">Проекты</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/Shtoga" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    &copy; 2024 Надежда Шкодина. Сделано с ❤️ и чистым кодом.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
